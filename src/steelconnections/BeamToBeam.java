@@ -884,6 +884,7 @@ public class BeamToBeam extends javax.swing.JFrame {
                 + "Klasa stali: \t" + cboKlasaStali.getSelectedItem().toString() + "\n"
                 + "Granica plastyczności stali: \t\t fy= " + fy + "\t [MPa]" + "\n"
                 + "Wytrzymałość stali na rozciąganie: \t fu= " + fu + "\t [MPa]" + "\n"
+                + "Częściowy współczynnik bezpieczeństwa: \t " + unicodeSymbols.gamma +"M2= " + gammaM2 + "\n"
                 + "\n"
                 + "Średnica śruby: \t d= " + d + "\t [mm]" + "\n"
                 + "Średnica otworu: \t d0= " + d0 + "\t [mm]" + "\n"
@@ -896,8 +897,10 @@ public class BeamToBeam extends javax.swing.JFrame {
                 + "\n"
                 + "Płaszczyzna ścinania przechodzi przez: \t " + cboPlaszczyznaScinania.getSelectedItem().toString() + " część śruby" + "\t alfaV= " + alfaV + "\t Av= " + av + " [mm2] \n"
                 + "\n"
-                + "Nośność śruby na ścinanie: \t Fv,Rd = (alfaV * fub * Av) / Ym2 = " + fVRd + " [kN] \n"
-              //  + "??: " + unicodeSymbols.gamma +"M2= " + gammaM2 + "\n"
+                + "Nośność śruby na ścinanie: \n"
+                + "Fv,Rd = (alfaV * fub * Av) / Ym2 \n"
+                + "Fv,Rd = (" + alfaV + " * "+ fub +" * " + av + ") / "+ gammaM2 +" = " + fVRd + " [kN] \n"
+                
                 ;
         return reportString;
     }
