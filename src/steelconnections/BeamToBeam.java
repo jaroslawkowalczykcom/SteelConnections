@@ -5,6 +5,8 @@
  */
 package steelconnections;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author malgo
@@ -16,6 +18,12 @@ public class BeamToBeam extends javax.swing.JFrame {
      */
     public BeamToBeam() {
         initComponents();
+        setIcon();
+        setTitle("SteelConnections - Beam to beam");
+    }
+    
+    public void setIcon(){
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("ico.png")));
     }
 
     /**
