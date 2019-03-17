@@ -12,5 +12,6 @@ package steelconnections;
 public class UnicodeSymbols {
     
     char gamma = '\u03B3';
+    char alfa = '\u03B1';
     
 }

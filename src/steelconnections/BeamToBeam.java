@@ -5,7 +5,9 @@
  */
 package steelconnections;
 
+import java.awt.Color;
 import java.awt.Toolkit;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -38,7 +40,6 @@ public class BeamToBeam extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         cboSrednicaSrub = new javax.swing.JComboBox<>();
@@ -82,15 +83,6 @@ public class BeamToBeam extends javax.swing.JFrame {
         btnRaport = new javax.swing.JButton();
         btnCalculate = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        txtE1 = new javax.swing.JTextField();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        txtE2 = new javax.swing.JTextField();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        txtP1 = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         cboBoltColumn = new javax.swing.JComboBox<>();
         jLabel41 = new javax.swing.JLabel();
@@ -118,13 +110,28 @@ public class BeamToBeam extends javax.swing.JFrame {
         lbl2_4 = new javax.swing.JLabel();
         lbl2_5 = new javax.swing.JLabel();
         lbl2_6 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        txtE1 = new javax.swing.JTextField();
+        txtE2 = new javax.swing.JTextField();
+        txtP1 = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        txtE1Min = new javax.swing.JTextField();
+        txtP1Min = new javax.swing.JTextField();
+        txtE2Min = new javax.swing.JTextField();
+        jLabel42 = new javax.swing.JLabel();
+        txtP2 = new javax.swing.JTextField();
+        jLabel43 = new javax.swing.JLabel();
+        txtP2Min = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setName(""); // NOI18N
-
-        jLabel27.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel27.setText("Copyright (c) 2019 by Jarosław Kowalczyk");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Parametry połączenia"));
         jPanel2.setName(""); // NOI18N
@@ -438,24 +445,6 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Rozmieszczenie śrub"));
 
-        jLabel19.setText("e1=");
-
-        txtE1.setText("25");
-
-        jLabel20.setText("[mm]");
-
-        jLabel21.setText("e2=");
-
-        txtE2.setText("25");
-
-        jLabel22.setText("[mm]");
-
-        jLabel23.setText("p1=");
-
-        txtP1.setText("50");
-
-        jLabel24.setText("[mm]");
-
         jLabel40.setText("Rzędy śrub:");
 
         cboBoltColumn.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "wybierz", "1", "2" }));
@@ -499,27 +488,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel19)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtE1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel20))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtE2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel22))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel23)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtP1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel24)))
-                .addGap(62, 62, 62)
+                .addGap(205, 205, 205)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel7)
@@ -563,40 +532,33 @@ public class BeamToBeam extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtE1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel40)
-                    .addComponent(cboBoltColumn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtFvRd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel17)
-                        .addComponent(jLabel18)))
+                        .addComponent(jLabel18))
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel40)
+                        .addComponent(cboBoltColumn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtE2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel22)
-                    .addComponent(jLabel41)
-                    .addComponent(cboBoltRow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtFtRd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel37)
-                        .addComponent(jLabel38)))
+                        .addComponent(jLabel38))
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel41)
+                        .addComponent(cboBoltRow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel24)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel26)
+                        .addComponent(jLabel25))
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtGammaM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel7)
-                        .addComponent(jLabel15)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel25))))
+                        .addComponent(jLabel15)))
                 .addGap(0, 16, Short.MAX_VALUE))
         );
 
@@ -735,21 +697,126 @@ public class BeamToBeam extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Rozmieszczenie otworów"));
+
+        jLabel19.setText("e1=");
+
+        jLabel21.setText("e2=");
+
+        jLabel23.setText("p1=");
+
+        txtE1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtE1.setText("25");
+
+        txtE2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtE2.setText("25");
+
+        txtP1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtP1.setText("50");
+
+        jLabel20.setText("[mm]     >=     1,2 x d0 =");
+
+        jLabel22.setText("[mm]     >=     1,2 x d0 =");
+
+        jLabel24.setText("[mm]     >=     2,2 x d0 =");
+
+        txtE1Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        txtP1Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        txtE2Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jLabel42.setText("p2=");
+
+        txtP2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtP2.setText("50");
+
+        jLabel43.setText("[mm]     >=     2,4 x d0 =");
+
+        txtP2Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel19)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtE1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtE1Min, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtP1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel24)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtP1Min, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtE2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtE2Min, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel42)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtP2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel43)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtP2Min, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtE1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel20)
+                    .addComponent(txtE1Min, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel23)
+                    .addComponent(jLabel24)
+                    .addComponent(txtP1Min, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(txtE2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22)
+                    .addComponent(txtE2Min, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtP2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel43)
+                    .addComponent(txtP2Min, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 10, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel27)
-                .addGap(390, 390, 390))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel_img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -763,23 +830,32 @@ public class BeamToBeam extends javax.swing.JFrame {
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel_img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel27)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.getAccessibleContext().setAccessibleName("");
+
+        jLabel27.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel27.setText("Copyright (c) 2019 by Jarosław Kowalczyk");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel27)
+                .addGap(380, 380, 380))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addComponent(jLabel27)
+                .addContainerGap())
         );
 
         jPanel1.getAccessibleContext().setAccessibleName("");
@@ -815,6 +891,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         e1 = Double.parseDouble(txtE1.getText());
         e2 = Double.parseDouble(txtE2.getText());
         p1 = Double.parseDouble(txtP1.getText());
+        p2 = Double.parseDouble(txtP2.getText());
 
         // Nośność śruby na ścinanie
         fVRd = ((alfaV * fub * av) / gammaM2) * 0.001;
@@ -860,6 +937,12 @@ public class BeamToBeam extends javax.swing.JFrame {
         fBRd2 = ((k1 * alfaB2 * fu * d * t) / gammaM2) * 0.001;
 
         System.out.println("fbrd2 = " + fBRd2);
+        
+        // Holes checkers
+        e1Checker();
+        p1Checker();
+        e2Checker();
+        p2Checker();
     }//GEN-LAST:event_btnCalculateActionPerformed
 
     private void btnRaportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaportActionPerformed
@@ -929,6 +1012,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         double e1;
         double e2;
         double p1;
+        double p2;
         double alfaB1;
         double alfaB2;
         double alfaD1;
@@ -1267,11 +1351,77 @@ public class BeamToBeam extends javax.swing.JFrame {
                 + "Nośność śruby na ścinanie: \n"
                 + "Fv,Rd = (alfaV * fub * Av) / Ym2 \n"
                 + "Fv,Rd = (" + alfaV + " * "+ fub +" * " + av + ") / "+ gammaM2 +" = " + fVRd + " [kN] \n"
+                + "\n"
+                + "Nośność śruby na docisk do środnika belki: \n"
+                + "- Śruba skrajna \n"
+             //   + "Fb,Rd1 = (k1 * " + unicodeSymbols.alfa + "b * fu * d * tw) / Ym2 \n"   // ustawić tw jako cieńszy z łączonych elementów
                 
                 ;
         return reportString;
     }
     
+    public void e1Checker() {
+        double e1Min;
+        
+        e1Min = 1.2 * d0;
+        
+        txtE1Min.setText(Double.toString(e1Min));
+        
+        if (e1 >= e1Min) {
+            txtE1.setForeground(Color.GREEN);   
+        } else {
+            txtE1.setForeground(Color.RED);
+            JOptionPane.showMessageDialog(null, "Zwiększ odległość czołową otworów \"e1\" ");
+        }  
+    }
+    
+    public void p1Checker() {
+        double p1Min;
+        
+        p1Min = 2.2 * d0;
+        
+        txtP1Min.setText(Double.toString(p1Min));
+        
+        if (p1 >= p1Min) {
+            txtP1.setForeground(Color.GREEN);   
+        } else {
+            txtP1.setForeground(Color.RED);
+            JOptionPane.showMessageDialog(null, "Zwiększ rozstaw otworów \"p1\" ");
+        }  
+    }
+    
+    public void e2Checker() {
+        double e2Min;
+        
+        e2Min = 1.2 * d0;
+        
+        txtE2Min.setText(Double.toString(e2Min));
+        
+        if (e2 >= e2Min) {
+            txtE2.setForeground(Color.GREEN);   
+        } else {
+            txtE2.setForeground(Color.RED);
+            JOptionPane.showMessageDialog(null, "Zwiększ odległość boczną otworów \"e2\" ");
+        }  
+    }
+    
+    public void p2Checker() {
+        double p2Min;
+        
+        p2Min = 2.4 * d0;
+        
+        if (cboBoltColumn.getSelectedItem().equals("2")) {
+            txtP2Min.setText(Double.toString(p2Min));
+            if (p2 >= p2Min) {
+                txtP2.setForeground(Color.GREEN);   
+            } else {
+                txtP2.setForeground(Color.RED);
+                JOptionPane.showMessageDialog(null, "Zwiększ rozstaw otworów \"p2\" ");
+            }  
+        } else {
+            txtP2Min.setText("");
+        }
+    }
     
     /**
      * @param args the command line arguments
@@ -1354,6 +1504,8 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1362,6 +1514,7 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel_img;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel lbl1_2;
@@ -1380,7 +1533,9 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JTextField txtAv;
     private javax.swing.JTextField txtD0;
     private javax.swing.JTextField txtE1;
+    private javax.swing.JTextField txtE1Min;
     private javax.swing.JTextField txtE2;
+    private javax.swing.JTextField txtE2Min;
     private javax.swing.JTextField txtFtRd;
     private javax.swing.JTextField txtFu;
     private javax.swing.JTextField txtFub;
@@ -1389,6 +1544,9 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JTextField txtFyb;
     private javax.swing.JTextField txtGammaM2;
     private javax.swing.JTextField txtP1;
+    private javax.swing.JTextField txtP1Min;
+    private javax.swing.JTextField txtP2;
+    private javax.swing.JTextField txtP2Min;
     private javax.swing.JTextField txtT;
     // End of variables declaration//GEN-END:variables
 }
