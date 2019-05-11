@@ -96,9 +96,6 @@ public class BeamToBeam extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         txtGammaM2 = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        txtT = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
         jPanel_img = new javax.swing.JPanel();
         lbl1_2 = new javax.swing.JLabel();
         lbl1_3 = new javax.swing.JLabel();
@@ -127,6 +124,26 @@ public class BeamToBeam extends javax.swing.JFrame {
         txtP2 = new javax.swing.JTextField();
         jLabel43 = new javax.swing.JLabel();
         txtP2Min = new javax.swing.JTextField();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        txtTpl = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        txtTw = new javax.swing.JTextField();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        txtT = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        txtFbRd1 = new javax.swing.JTextField();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        txtFbRd2 = new javax.swing.JTextField();
+        jLabel54 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -477,12 +494,6 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         jLabel15.setText("[-]");
 
-        jLabel26.setText("t=");
-
-        txtT.setText("5.0");
-
-        jLabel25.setText("[-]");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -496,12 +507,6 @@ public class BeamToBeam extends javax.swing.JFrame {
                         .addComponent(txtGammaM2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel15)
-                        .addGap(26, 26, 26)
-                        .addComponent(jLabel26)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtT, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel25)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -550,15 +555,10 @@ public class BeamToBeam extends javax.swing.JFrame {
                         .addComponent(jLabel41)
                         .addComponent(cboBoltRow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel26)
-                        .addComponent(jLabel25))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtGammaM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel7)
-                        .addComponent(jLabel15)))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtGammaM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel15))
                 .addGap(0, 16, Short.MAX_VALUE))
         );
 
@@ -706,13 +706,13 @@ public class BeamToBeam extends javax.swing.JFrame {
         jLabel23.setText("p1=");
 
         txtE1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtE1.setText("25");
+        txtE1.setText("50");
 
         txtE2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtE2.setText("25");
+        txtE2.setText("50");
 
         txtP1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtP1.setText("50");
+        txtP1.setText("80");
 
         jLabel20.setText("[mm]     >=     1,2 x d0 =");
 
@@ -729,7 +729,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         jLabel42.setText("p2=");
 
         txtP2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtP2.setText("50");
+        txtP2.setText("80");
 
         jLabel43.setText("[mm]     >=     2,4 x d0 =");
 
@@ -805,18 +805,162 @@ public class BeamToBeam extends javax.swing.JFrame {
                 .addGap(0, 10, Short.MAX_VALUE))
         );
 
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Grubości łączonych elementów"));
+
+        jLabel26.setText("tpl=");
+
+        txtTpl.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtTpl.setText("8.0");
+
+        jLabel25.setText("[mm]");
+
+        jLabel44.setText("tw=");
+
+        txtTw.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtTw.setText("6.6");
+
+        jLabel45.setText("[mm]");
+
+        jLabel46.setText("t=");
+
+        txtT.setBackground(new java.awt.Color(204, 204, 204));
+        txtT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jLabel47.setText("[mm]");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtTpl, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel25))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel44)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtTw, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel45))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel46)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtT, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel47)))
+                .addContainerGap(141, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTw, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel45))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel46)
+                    .addComponent(jLabel47))
+                .addGap(0, 75, Short.MAX_VALUE))
+        );
+
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Wyniki"));
+
+        jLabel48.setText("Nośność śruby na docisk do środnika belki");
+
+        txtFbRd1.setBackground(new java.awt.Color(204, 204, 204));
+        txtFbRd1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jLabel49.setText("[kN]");
+
+        jLabel50.setText("Fb,Rd,1 =");
+
+        jLabel51.setText("     - Śruba skrajna");
+
+        jLabel52.setText("     - Śruba pośrednia");
+
+        jLabel53.setText("Fb,Rd,2 =");
+
+        txtFbRd2.setBackground(new java.awt.Color(204, 204, 204));
+        txtFbRd2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jLabel54.setText("[kN]");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel48)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
+                            .addComponent(jLabel51)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel50)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtFbRd1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel49))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
+                            .addComponent(jLabel52)
+                            .addGap(18, 18, 18)
+                            .addComponent(jLabel53)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtFbRd2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel54))))
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addComponent(jLabel48)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel51)
+                    .addComponent(txtFbRd1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel49)
+                    .addComponent(jLabel50))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
+                    .addComponent(txtFbRd2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel54)
+                    .addComponent(jLabel53))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel_img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel_img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -827,11 +971,16 @@ public class BeamToBeam extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel_img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jPanel_img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         jPanel2.getAccessibleContext().setAccessibleName("");
@@ -853,7 +1002,7 @@ public class BeamToBeam extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel27)
                 .addContainerGap())
         );
@@ -886,7 +1035,11 @@ public class BeamToBeam extends javax.swing.JFrame {
         d0 = Double.parseDouble(txtD0.getText());
         gammaM2 = Double.parseDouble(txtGammaM2.getText());
         alfaV = Double.parseDouble(txtAlfaV.getText());
-        t = Double.parseDouble(txtT.getText());
+        
+        tpl = Double.parseDouble(txtTpl.getText());
+        tw = Double.parseDouble(txtTw.getText());
+        t = Math.min(tpl, tw);
+        txtT.setText(Double.toString(t));
 
         e1 = Double.parseDouble(txtE1.getText());
         e2 = Double.parseDouble(txtE2.getText());
@@ -895,7 +1048,7 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         // Nośność śruby na ścinanie
         fVRd = ((alfaV * fub * av) / gammaM2) * 0.001;
-        fVRd = roundUpToNplace(fVRd, 100);
+        fVRd = roundUpToNplace(fVRd, 10);
         txtFvRd.setText(Double.toString(fVRd));
 
         // Nosnosc srub na rozciąganie
@@ -906,43 +1059,45 @@ public class BeamToBeam extends javax.swing.JFrame {
         // Nośność śruby na docisk do środnika belki (t - cieńszy z elementów)
 
         // Śruba skrajna
-        k1a = 2.8 * (e2/d0) - 1.7;
+        k1a = roundUpToNplace(2.8 * (e2/d0) - 1.7, 100);
         k1b = 2.5;
-        System.out.println(k1a);
-
+        
         k1 = Math.min(k1a, k1b);
-        System.out.println("k1 = " + k1);
+        
+        System.out.println("-------");
+        System.out.println(k1a);
+        System.out.println(k1b);
+        
+        System.out.println("k1 min k1a i k1b= " + k1);
+        System.out.println("+++++++++++");
 
-        alfaD1 = e1 / (3 * d0);
+        alfaD1 = roundUpToNplace(e1 / (3 * d0), 1000);
 
-        // Wybrać z listy w zależności od klasy stali
-        //fu = 360;
-
-        alfaB1 = Math.min(Math.min(alfaD1, fub / fu), 1.0);
+        alfaB1 = Math.min(Math.min(alfaD1, roundUpToNplace(fub / fu, 1000)), 1.0);
         System.out.println("alfaD1 = " + alfaD1);
-        System.out.println(fub/fu);
+        System.out.println("fub/fu =" + roundUpToNplace(fub / fu, 1000));
         System.out.println("alfaB1 = " + alfaB1);
+        System.out.println("=-=-=-=");
 
-        fBRd1 = ((k1 * alfaB1 * fu * d * t) / gammaM2) * 0.001;
+        fBRd1 = roundUpToNplace(((k1 * alfaB1 * fu * d * t) / gammaM2)*0.001, 10);
+        txtFbRd1.setText(Double.toString(fBRd1));
 
         System.out.println("fbrd1 = " + fBRd1);
 
         // Śruba pośrednia
-        alfaD2 = (p1 / (3 * d0)) - 0.25;
-        alfaB2 = Math.min(Math.min(alfaD2, fub / fu), 1.0);
+        alfaD2 = roundUpToNplace((p1 / (3 * d0)) - 0.25, 1000);
+        alfaB2 = Math.min(Math.min(alfaD2, roundUpToNplace(fub / fu, 1000)), 1.0);
         System.out.println("alfaD2 = " + alfaD2);
-        System.out.println(fub/fu);
+        System.out.println("fub/fu =" + roundUpToNplace(fub / fu, 1000));
         System.out.println("alfaB2 = " + alfaB2);
 
-        fBRd2 = ((k1 * alfaB2 * fu * d * t) / gammaM2) * 0.001;
+        fBRd2 = roundUpToNplace(((k1 * alfaB2 * fu * d * t) / gammaM2) * 0.001, 10);
+        txtFbRd2.setText(Double.toString(fBRd2));
 
         System.out.println("fbrd2 = " + fBRd2);
         
-        // Holes checkers
-        e1Checker();
-        p1Checker();
-        e2Checker();
-        p2Checker();
+        
+        holesPositionChecker();
     }//GEN-LAST:event_btnCalculateActionPerformed
 
     private void btnRaportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaportActionPerformed
@@ -979,6 +1134,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         clearTextField();
         boltGrades();
         boltAndHolesCharacteristics();
+        clearCheckerTxtBox();
     }//GEN-LAST:event_cboSrednicaSrubItemStateChanged
     
         UnicodeSymbols unicodeSymbols = new UnicodeSymbols();
@@ -1025,6 +1181,9 @@ public class BeamToBeam extends javax.swing.JFrame {
         double fu;
         
         double k2;
+        
+        double tpl;
+        double tw;
         
     public double roundUpToNplace(double number, int numberAfterComa){
            String s = String.valueOf(number);
@@ -1333,8 +1492,8 @@ public class BeamToBeam extends javax.swing.JFrame {
     private String makeStringReport() {
         reportString = "POŁĄCZENIE PRZEGUBOWE ZAKŁADKOWE BELKA-BELKA \n\n"
                 + "Klasa stali: \t" + cboKlasaStali.getSelectedItem().toString() + "\n"
-                + "Granica plastyczności stali: \t\t fy= " + fy + "\t [MPa]" + "\n"
-                + "Wytrzymałość stali na rozciąganie: \t fu= " + fu + "\t [MPa]" + "\n"
+                + "Granica plastyczności stali: \t\t fy= " + fy + "\t [N/mm2]" + "\n"
+                + "Wytrzymałość stali na rozciąganie: \t fu= " + fu + "\t [N/mm2]" + "\n"
                 + "Częściowy współczynnik bezpieczeństwa: \t " + unicodeSymbols.gamma +"M2= " + gammaM2 + "\n"
                 + "\n"
                 + "Średnica śruby: \t d= " + d + "\t [mm]" + "\n"
@@ -1348,13 +1507,50 @@ public class BeamToBeam extends javax.swing.JFrame {
                 + "\n"
                 + "Płaszczyzna ścinania przechodzi przez: \t " + cboPlaszczyznaScinania.getSelectedItem().toString() + " część śruby" + "\t alfaV= " + alfaV + "\t Av= " + av + " [mm2] \n"
                 + "\n"
+                
+                + "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \n"
                 + "Nośność śruby na ścinanie: \n"
+                + "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \n"
                 + "Fv,Rd = (alfaV * fub * Av) / Ym2 \n"
-                + "Fv,Rd = (" + alfaV + " * "+ fub +" * " + av + ") / "+ gammaM2 +" = " + fVRd + " [kN] \n"
+                + "Fv,Rd = ((" + alfaV + " * "+ fub +" * " + av + ") / "+ gammaM2 +") * 0.001 = " + fVRd + " [kN] \n"
                 + "\n"
+                
+                + "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \n"
                 + "Nośność śruby na docisk do środnika belki: \n"
+                + "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - \n"
                 + "- Śruba skrajna \n"
-             //   + "Fb,Rd1 = (k1 * " + unicodeSymbols.alfa + "b * fu * d * tw) / Ym2 \n"   // ustawić tw jako cieńszy z łączonych elementów
+                + "Fb,Rd1 = (k1 * " + unicodeSymbols.alfa + "b * fu * d * tw) / Ym2 \n"
+                + "\n"
+                + "k1a = 2.8 * (e2 / d0) - 1.7 = 2.8 * (" + e2 + " / " + d0 + ") - 1.7 = " + k1a + "\n" 
+                + "k1b = " + k1b + "\n"
+                + "k1 = min {k1a; k1b} = " + k1 + "\n"
+                + "\n"
+                + unicodeSymbols.alfa + "d1 = e1 / (3 * d0) = " + e1 + " / (3 * " + d0 + ") = " + alfaD1 + "\n"
+                + unicodeSymbols.alfa + "d2 = fub / fu = " + fub + " / " + fu + " = " + roundUpToNplace(fub / fu, 1000) + "\n"
+                + unicodeSymbols.alfa + "d3 = 1.0 \n"
+                + unicodeSymbols.alfa + "b = min {" + unicodeSymbols.alfa + "d1; " 
+                                                    + unicodeSymbols.alfa + "d2; " 
+                                                    + unicodeSymbols.alfa + "d3; } = min {" + alfaD1 + "; " 
+                                                                                            + roundUpToNplace(fub / fu, 1000) 
+                                                                                            + "; 1.0} = " + alfaB1 + "\n"
+                + "\n"
+                + "Fb,Rd1 = (k1 * " + unicodeSymbols.alfa + "b * fu * d * tw) / Ym2 = ((" + k1 + " * " + alfaB1 + " * " + fu + " * " + d + " * " + tw + ") / " + gammaM2 + ") * 0.001 = " + fBRd1 + " [kN] \n"
+                                            
+                + "\n"
+                + "- Śruba pośrednia \n"
+                + "Fb,Rd2 = (k1 * " + unicodeSymbols.alfa + "b * fu * d * tw) / Ym2 \n"
+                + "\n"
+                + unicodeSymbols.alfa + "d1 = (p1 / (3 * d0)) - 0.25 = (" + p1 + " / (3 * " + d0 + ")) - 0.25 = " + alfaD2 + "\n"
+                + unicodeSymbols.alfa + "d2 = fub / fu = " + fub + " / " + fu + " = " + roundUpToNplace(fub / fu, 1000) + "\n"
+                + unicodeSymbols.alfa + "d3 = 1.0 \n"
+                + unicodeSymbols.alfa + "b = min {" + unicodeSymbols.alfa + "d1; " 
+                                                    + unicodeSymbols.alfa + "d2; " 
+                                                    + unicodeSymbols.alfa + "d3; } = min {" + alfaD2 + "; " 
+                                                                                            + roundUpToNplace(fub / fu, 1000) 
+                                                                                            + "; 1.0} = " + alfaB2 + "\n"
+                + "\n"
+                + "Fb,Rd2 = (k1 * " + unicodeSymbols.alfa + "b * fu * d * tw) / Ym2 = ((" + k1 + " * " + alfaB2 + " * " + fu + " * " + d + " * " + tw + ") / " + gammaM2 + ") * 0.001 = " + fBRd2 + " [kN] \n"
+                                            
                 
                 ;
         return reportString;
@@ -1364,6 +1560,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         double e1Min;
         
         e1Min = 1.2 * d0;
+        e1Min = roundUpToNplace(e1Min, 10);
         
         txtE1Min.setText(Double.toString(e1Min));
         
@@ -1379,6 +1576,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         double p1Min;
         
         p1Min = 2.2 * d0;
+        p1Min = roundUpToNplace(p1Min, 10);
         
         txtP1Min.setText(Double.toString(p1Min));
         
@@ -1394,6 +1592,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         double e2Min;
         
         e2Min = 1.2 * d0;
+        e2Min = roundUpToNplace(e2Min, 10);
         
         txtE2Min.setText(Double.toString(e2Min));
         
@@ -1409,6 +1608,7 @@ public class BeamToBeam extends javax.swing.JFrame {
         double p2Min;
         
         p2Min = 2.4 * d0;
+        p2Min = roundUpToNplace(p2Min, 10);
         
         if (cboBoltColumn.getSelectedItem().equals("2")) {
             txtP2Min.setText(Double.toString(p2Min));
@@ -1421,6 +1621,20 @@ public class BeamToBeam extends javax.swing.JFrame {
         } else {
             txtP2Min.setText("");
         }
+    }
+    
+    public void holesPositionChecker() {
+        e1Checker();
+        p1Checker();
+        e2Checker();
+        p2Checker();
+    }
+    
+    public void clearCheckerTxtBox() {
+        txtE1Min.setText("");
+        txtP1Min.setText("");
+        txtE2Min.setText("");
+        txtP2Min.setText("");
     }
     
     /**
@@ -1506,7 +1720,18 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1515,6 +1740,8 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel_img;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel lbl1_2;
@@ -1536,6 +1763,8 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JTextField txtE1Min;
     private javax.swing.JTextField txtE2;
     private javax.swing.JTextField txtE2Min;
+    private javax.swing.JTextField txtFbRd1;
+    private javax.swing.JTextField txtFbRd2;
     private javax.swing.JTextField txtFtRd;
     private javax.swing.JTextField txtFu;
     private javax.swing.JTextField txtFub;
@@ -1548,5 +1777,7 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JTextField txtP2;
     private javax.swing.JTextField txtP2Min;
     private javax.swing.JTextField txtT;
+    private javax.swing.JTextField txtTpl;
+    private javax.swing.JTextField txtTw;
     // End of variables declaration//GEN-END:variables
 }
