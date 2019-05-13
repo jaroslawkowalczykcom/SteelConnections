@@ -144,6 +144,12 @@ public class BeamToBeam extends javax.swing.JFrame {
         jLabel53 = new javax.swing.JLabel();
         txtFbRd2 = new javax.swing.JTextField();
         jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabelBigger = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        txtF = new javax.swing.JTextField();
+        jLabel57 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -482,9 +488,13 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         jLabel17.setText("Fv,Rd=");
 
+        txtFvRd.setBackground(new java.awt.Color(204, 204, 204));
+
         jLabel18.setText("[kN]");
 
         jLabel37.setText("Ft,Rd=");
+
+        txtFtRd.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel38.setText("[kN]");
 
@@ -720,10 +730,13 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         jLabel24.setText("[mm]     >=     2,2 x d0 =");
 
+        txtE1Min.setBackground(new java.awt.Color(204, 204, 204));
         txtE1Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        txtP1Min.setBackground(new java.awt.Color(204, 204, 204));
         txtP1Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        txtE2Min.setBackground(new java.awt.Color(204, 204, 204));
         txtE2Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel42.setText("p2=");
@@ -733,6 +746,7 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         jLabel43.setText("[mm]     >=     2,4 x d0 =");
 
+        txtP2Min.setBackground(new java.awt.Color(204, 204, 204));
         txtP2Min.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -872,7 +886,7 @@ public class BeamToBeam extends javax.swing.JFrame {
                     .addComponent(txtT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel46)
                     .addComponent(jLabel47))
-                .addGap(0, 75, Short.MAX_VALUE))
+                .addGap(0, 83, Short.MAX_VALUE))
         );
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Wyniki"));
@@ -897,6 +911,19 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         jLabel54.setText("[kN]");
 
+        jLabel55.setText("Nośność grupy łączników");
+
+        jLabel56.setText("Fv,Rd");
+
+        jLabelBigger.setText("-");
+
+        jLabel58.setText("Fb,Rd");
+
+        txtF.setBackground(new java.awt.Color(204, 204, 204));
+        txtF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jLabel57.setText("[kN]");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -905,7 +932,19 @@ public class BeamToBeam extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel48)
+                    .addComponent(jLabel55)
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
+                            .addGap(15, 15, 15)
+                            .addComponent(jLabel56)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jLabelBigger)
+                            .addGap(18, 18, 18)
+                            .addComponent(jLabel58)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtF, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel57))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
                             .addComponent(jLabel51)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -940,6 +979,16 @@ public class BeamToBeam extends javax.swing.JFrame {
                     .addComponent(txtFbRd2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel54)
                     .addComponent(jLabel53))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel55)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel56)
+                    .addComponent(jLabelBigger)
+                    .addComponent(jLabel58)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel57)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1096,6 +1145,23 @@ public class BeamToBeam extends javax.swing.JFrame {
 
         System.out.println("fbrd2 = " + fBRd2);
         
+        fVRdSum = (Double.parseDouble(cboBoltColumn.getSelectedItem().toString())) 
+                * (Double.parseDouble(cboBoltRow.getSelectedItem().toString())) 
+                * fVRd;
+        fBRdSum = (Double.parseDouble(cboBoltColumn.getSelectedItem().toString())) 
+                * (fBRd1 + fBRd2)                                                               // Dodać zależność od ilości rzędów i wierszy śrub
+                * fVRd;
+        
+        System.out.println("fVRdSum = "+ fVRdSum);
+        System.out.println("fVBdSum = "+ fBRdSum);
+        
+//        if ((fVRd < fBRd1) || (fVRd < fBRd2)) {
+//            jLabelBigger.setText("<");
+//            txtF.setText(Double.toString(fVRdSum));
+//        } else {
+//            jLabelBigger.setText(">");
+//            txtF.setText(Double.toString(fBRdSum));
+//        }
         
         holesPositionChecker();
     }//GEN-LAST:event_btnCalculateActionPerformed
@@ -1184,6 +1250,9 @@ public class BeamToBeam extends javax.swing.JFrame {
         
         double tpl;
         double tw;
+        
+        double fVRdSum;
+        double fBRdSum;
         
     public double roundUpToNplace(double number, int numberAfterComa){
            String s = String.valueOf(number);
@@ -1732,10 +1801,15 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelBigger;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1763,6 +1837,7 @@ public class BeamToBeam extends javax.swing.JFrame {
     private javax.swing.JTextField txtE1Min;
     private javax.swing.JTextField txtE2;
     private javax.swing.JTextField txtE2Min;
+    private javax.swing.JTextField txtF;
     private javax.swing.JTextField txtFbRd1;
     private javax.swing.JTextField txtFbRd2;
     private javax.swing.JTextField txtFtRd;
